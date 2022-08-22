@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>qrupay.com</title>
+</head>
+<body>
+
+    <nav>
+        <a href="#"><img src="images/logo.png"></a>
+        <div class="navigation">
+            <ul>
+                <img id="menu-close" src="images/x-regular-24.png">
+                <li><a href="WaitList.html">Join Waitlist</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu_FILL0_wght400_GRAD0_opsz48 (1).png">
+        </div>
+      </nav>
+
+
+   <section class="main reveal">
+    <div class="box1">
+      <h1>Payments and Purchase <br> made easy with Qruzpay.</h1>
+      <p class="para1">
+        You can become a superhuman with either airtime or cash.</p>
+    </div>
+    <div class="box2">
+       <img src="images/Group 162681.png" alt="">
+    </div>
+   </section>
+
+    <section class="features reveal">
+      <img class="woman" src="images/woman.fc21ff3a.svg">
+    <h1>Why Should I Use Qruzpay?</h1>
+    <p>Here are some of the features we'll offer, and reasons why you should use our application.</p>
+    <div class="fea-base">
+    <div class="fea-box">
+      <i class='bx bxs-bank'></i>
+      <h3>Everything's Made Easy</h3>
+      <p>No need going to the bank to make payments and transactions or even purchase items. Everything has been made easy with qruzpay.</p>
+    </div>
+    <div class="fea-box">
+      <i class='bx bxl-mastercard card'></i>
+      <h3>Make Payments With Airtime or Cash</h3>
+      <p>Qruzpay enables users to make Payments & Purchase with both airtime and cash.</p>
+    </div>
+    <div class="fea-box">
+      <i class='bx bxs-check-shield shield'></i>
+      <h3>Secured & Safe Transactions</h3>
+      <p>Qruzpay offers a secure and safe transaction process.</p>
+    </div>
+    </div>
+    </section>
+
+    <footer class="footer reveal">
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+          <li><a href="https://web.facebook.com/qruzpay/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/qruzpayservices"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com/qruzpayservices"><i class="fa-brands fa-instagram"></i></a></li>
+      </div>
+
+      <div class="col">
+        <h3>Company</h3>
+        <li>Home</li>
+        <li>Secured & Safe Transactions</li>
+      </div>
+
+      <div class="col">
+        <h3>Legal</h3>
+        <li>Terms & Services</li>
+        <li>Privacy guidelines</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Get Notified When We Launch!</h3>
+        <div class="waitlist">
+          <a href="WaitList.html" class="yellow">Sign Me Up!</a>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="copyright">
+          <p><i class='bx bx-copyright'></i>QRUZPAY 2022, ALL RIGHTS RESERVED</p>
+          <div class="pro-links">
+            <li><a href="https://web.facebook.com/qruzpay/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/qruzpayservices"><i class="fa-brands fa-twitter"></i></a></li>
+           <li><a href="https://instagram.com/qruzpayservices"><i class="fa-brands fa-instagram"></i></a></li>
+          </div>
+        </div>
+    </footer>
+
+      <script src="dart.js"></script>
+      <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+          function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+    
+            for(var i = 0; i < reveals.length; i++){
+    
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 150;
+    
+              if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+              }
+              else{
+                reveals[i].classList.remove('active');
+              }
+            }
+          }
+      </script>
+</body>
+</html>

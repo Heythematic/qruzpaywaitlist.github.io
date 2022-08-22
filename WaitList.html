@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>qrupay.com</title>
+</head>
+<body>
+
+    <nav>
+        <a href="WaitList.html"><img src="images/logo.png"></a>
+        <div class="navigation">
+            <ul>
+                <img id="menu-close" src="images/x-regular-24.png">
+                <li><a href="about.html">About Qruzpay</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu_FILL0_wght400_GRAD0_opsz48 (1).png">
+        </div>
+      </nav>
+
+
+      <section id="registration">
+        <div class="reminder reveal">
+            <h1>Get &#129321; <br> Notified When <br> We Launch.<img class="roc" src="images/rocket_launch_FILL0_wght400_GRAD0_opsz48.png"></h1>
+            <p>Discover a new way to pay, with either airtime or cash.</p>
+            <div class="time">
+                <div class="date">
+                    31<br>Days
+                </div>
+                <div class="date">
+                    45<br>Minutes
+                </div>
+                <div class="date">
+                    58<br>Seconds
+                </div>
+            </div>
+            </div>
+
+            <div class="form reveal">
+                <form id="my-form" action="https://formspree.io/f/xjvzbqyr" method="POST">
+                   
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    
+                    <input type="text" placeholder="Full name" required>
+                    <div class="button-submit">
+                        <button id="my-form-button"><a href="Thanks.html">Submit</a></button>
+                    <p id="my-form-status"></p>
+                  </form>
+            </div>
+      </section>
+
+  <script src="dart.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+          else{
+            reveals[i].classList.remove('active');
+          }
+        }
+      }
+  </script>
+</body>
+</html>
